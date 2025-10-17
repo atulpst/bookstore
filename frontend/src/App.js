@@ -11,7 +11,7 @@ function App() {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const { data } = await axios.get('http://localhost:5001/api/books');
+                const { data } = await axios.get('https://bookstore-0o25.onrender.comapi/books');
                 setBooks(data);
             } catch (error) {
                 console.error("Error fetching books:", error);

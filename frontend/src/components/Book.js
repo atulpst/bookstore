@@ -23,7 +23,7 @@ const Book = ({ book }) => {
         }
 
         try {
-            const orderResponse = await axios.post('http://localhost:5001/api/payment/order', {
+            const orderResponse = await axios.post('https://bookstore-0o25.onrender.com/api/payment/order', {
                 amount: book.price,
             });
             const order = orderResponse.data;
@@ -42,7 +42,7 @@ const Book = ({ book }) => {
                         razorpay_signature: response.razorpay_signature,
                     };
                     
-                    const verificationResponse = await axios.post('http://localhost:5001/api/payment/verify', verificationData);
+                    const verificationResponse = await axios.post('https://bookstore-0o25.onrender.com/api/payment/verify', verificationData);
                     
                     if(verificationResponse.data.status === 'success') {
                         alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
