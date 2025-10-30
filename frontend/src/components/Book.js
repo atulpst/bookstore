@@ -23,19 +23,22 @@ const Book = ({ book }) => {
         }
 
         try {
+            // 1. Create an order on the backend (use the live Render URL)
             const orderResponse = await axios.post('https://bookstore-0o25.onrender.com/api/payment/order', {
                 amount: book.price,
             });
             const order = orderResponse.data;
 
+            // 2. Configure Razorpay payment options
             const options = {
-                key: "rzp_test_RUSPpyS3EzFCI2", // <<< IMPORTANT: PASTE YOUR KEY ID HERE
+                key: "YOUR_RAZORPAY_KEY_ID_HERE", // Paste your Razorpay Key ID
                 amount: order.amount,
                 currency: order.currency,
-                name: "Gemini Bookstore",
+                name: "Shri Sai Book Supplier",
                 description: `Payment for ${book.title}`,
                 order_id: order.id,
                 handler: async function (response) {
+                    // 3. Verify the payment on the backend (use the live Render URL)
                     const verificationData = {
                         razorpay_order_id: response.razorpay_order_id,
                         razorpay_payment_id: response.razorpay_payment_id,
@@ -56,10 +59,11 @@ const Book = ({ book }) => {
                     contact: "9999999999",
                 },
                 theme: {
-                    color: "#3399cc",
+                    color: "#0d6efd",
                 },
             };
 
+            // 4. Open the Razorpay payment modal
             const paymentObject = new window.Razorpay(options);
             paymentObject.open();
 
@@ -71,12 +75,15 @@ const Book = ({ book }) => {
 
     return (
         <div className="book-card">
-            <h3>{book.title}</h3>
-            <p>by {book.author}</p>
-            <p className="book-price">₹{book.price}</p>
-            <button className="buy-button" onClick={handlePayment}>
-                Buy Now (UPI/Cards)
-            </button>
+            <img src={book.coverImage} alt={book.title} className="book-cover" />
+            <div className="book-info">
+                <h3>{book.title}</h3>
+                <p className="book-author">by {book.author}</p>
+                <p className="book-price">₹{book.price}</p>
+                <button className="buy-button" onClick={handlePayment}>
+                    Buy Now (UPI/Cards)
+                </button>
+            </div>
         </div>
     );
 };
