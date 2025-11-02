@@ -65,7 +65,7 @@ app.get('/api/books', async (req, res) => {
                 title: 'Textbook of Medical Physiology', 
                 author: 'G. K. Pal', 
                 price: 1350,
-                coverImage: 'https://ibb.co/Kz7b2WjR"><img src="https://i.ibb.co/Nnpt9K6Q/Screenshot-2025-11-01-at-11-18-00-AM.png' // Find and paste a real image URL here
+                coverImage: 'https://i.ibb.co/Xkpj7tZN/Screenshot-2025-11-01-at-11-18-00-AM.png' // Find and paste a real image URL here
             },
             { 
                 title: 'Textbook of Biochemistry (Satyanarayana)', 
