@@ -71,7 +71,7 @@ app.get('/api/books', async (req, res) => {
                 title: 'Textbook of Biochemistry (Satyanarayana)', 
                 author: 'U. Satyanarayana', 
                 price: 1400,
-                coverImage: 'https://m.media-amazon.com/images/I/71-BrS916fL._AC_UF1000,1000_QL80_.jpg' // Find and paste a real image URL here
+                coverImage: 'https://i.ibb.co/NnptXkQ/Screenshot-2025-11-01-at-11-18-00-AM.png'
             }
         ];
         
