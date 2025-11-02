@@ -41,37 +41,37 @@ app.get('/api/books', async (req, res) => {
                 title: 'Guyton and Hall Textbook of Medical Physiology', 
                 author: 'Guyton & Hall', 
                 price: 1500,
-                coverImage: 'https://m.media-amazon.com/images/I/71-i4-d-r+L._AC_UF1000,1000_QL80_.jpg' // Find and paste a real image URL here
+                coverImage: 'https://i.ibb.co/Xkpj7tZN/Screenshot-2025-11-01-at-11-18-00-AM.png' // Find and paste a real image URL here
             },
             { 
                 title: 'Gray\'s Anatomy for Students', 
                 author: 'Richard Drake', 
                 price: 4500,
-                coverImage: 'https://m.media-amazon.com/images/I/61N-pL-2m9L._AC_UF1000,1000_QL80_.jpg' // Find and paste a real image URL here
+                coverImage: 'https://i.ibb.co/8LrtM194/Screenshot-2025-11-02-at-12-50-17-PM.png' // Find and paste a real image URL here
             },
             { 
                 title: 'Lippincott Illustrated Reviews: Biochemistry', 
                 author: 'Denise Ferrier', 
                 price: 2200,
-                coverImage: 'https://m.media-amazon.com/images/I/71b2-Mh2ySL._AC_UF1000,1000_QL80_.jpg' // Find and paste a real image URL here
+                coverImage: 'https://i.ibb.co/BXsCBZx/Screenshot-2025-11-02-at-12-54-27-PM.png' // Find and paste a real image URL here
             },
             { 
                 title: 'BD Chaurasia\'s Human Anatomy', 
                 author: 'B. D. Chaurasia', 
                 price: 3500,
-                coverImage: 'https://m.media-amazon.com/images/I/61Mx7-abYyL._AC_UF1000,1000_QL80_.jpg' // Find and paste a real image URL here
+                coverImage: 'https://i.ibb.co/rGNNHxnN/Screenshot-2025-11-02-at-2-37-48-PM.png' // Find and paste a real image URL here
             },
             { 
                 title: 'Textbook of Medical Physiology', 
                 author: 'G. K. Pal', 
                 price: 1350,
-                coverImage: 'https://i.ibb.co/Xkpj7tZN/Screenshot-2025-11-01-at-11-18-00-AM.png' // Find and paste a real image URL here
+                coverImage: 'https://i.ibb.co/qL59g60X/Screenshot-2025-11-02-at-2-40-50-PM.png' // Find and paste a real image URL here
             },
             { 
                 title: 'Textbook of Biochemistry (Satyanarayana)', 
                 author: 'U. Satyanarayana', 
                 price: 1400,
-                coverImage: 'https://i.ibb.co/NnptXkQ/Screenshot-2025-11-01-at-11-18-00-AM.png'
+                coverImage: 'https://i.ibb.co/k6QQhDLg/Screenshot-2025-11-02-at-2-42-47-PM.png'
             }
         ];
         
