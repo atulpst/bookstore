@@ -153,3 +153,46 @@ body {
   color: #f8f9fa;
   margin-top: 2rem;
 }
+
+/* =========================================
+   Mobile Responsiveness (Add this at the end)
+   ========================================= */
+@media (max-width: 600px) {
+  
+  /* 1. Give more screen space by reducing side padding */
+  .main-content {
+    padding: 1rem;
+  }
+
+  /* 2. Force 2 columns so books are side-by-side */
+  .book-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Smaller gap between books */
+  }
+
+  /* 3. Make the book image smaller height */
+  .book-cover {
+    height: 160px; /* Reduced from 320px */
+  }
+
+  /* 4. Make text smaller to fit the smaller card */
+  .book-info {
+    padding: 0.75rem;
+  }
+
+  .book-info h3 {
+    font-size: 1rem; /* Smaller title */
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+  }
+
+  .book-price {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .buy-button {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+}
