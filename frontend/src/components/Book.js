@@ -31,7 +31,7 @@ const Book = ({ book }) => {
 
             // 2. Configure Razorpay payment options
             const options = {
-                key: "rzp_test_RoPTa6EcJXn7Ye", // Paste your Razorpay Key ID
+                key: "rzp_test_Rptrwpzq108lRJ", // Paste your Razorpay Key ID
                 amount: order.amount,
                 currency: order.currency,
                 name: "Shri Sai Book Supplier",
