@@ -35,7 +35,7 @@ app.get('/api/books', async (req, res) => {
     title: 'Guyton and Hall Textbook of Medical Physiology', 
     author: 'Guyton & Hall', 
     price: 1500,
-    coverImage: 'https://i.ibb.co/6PZ0XmS/medical-physiology.jpg' // New correct link
+    coverImage: 'https://i.ibb.co/Xkpj7tZN/Screenshot-2025-11-01-at-11-18-00-AM.png' // New correct link
 
             },
             { 
