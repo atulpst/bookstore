@@ -4,7 +4,9 @@ const bookSchema = new mongoose.Schema({
     title: { type: String, required: true },
     author: { type: String, required: true },
     price: { type: Number, required: true },
-    coverImage: { type: String } // <--- ADD THIS LINE
+    image: { type: String, required: true }, // The URL you got from ImgBB
+    description: { type: String }
 });
 
-module.exports = mongoose.model('Book', bookSchema);
+const Book = mongoose.model('Book', bookSchema);
+module.exports = Book;
